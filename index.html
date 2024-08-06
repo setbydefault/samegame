@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Game - Mobile Game Development Studio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: url('data/header.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 10em 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.5em;
+        }
+        header p {
+            font-size: 1.5em;
+            animation: fadeIn 2s ease-in-out;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.5em;
+        }
+        nav {
+            background: #5a5a5a;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-family: 'Playfair Display', serif;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 1em 2em;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #757575;
+        }
+        .content {
+            padding: 5em 2em;
+        }
+        .content h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 1em;
+            color: #d32f2f;
+        }
+        .content .section {
+            margin: 3em 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content a {
+            color: #d32f2f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .content a:hover {
+            color: #b71c1c;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            background: #5a5a5a;
+            padding: 1em 0;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 1em;
+        }
+        .gallery img {
+            height: 200px;
+            margin-right: 1em;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: #5a5a5a;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .game-image {
+            display: block;
+            margin: 2em auto;
+            width: 50%;
+            max-width: 200px;
+            height: auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#game">Our Game</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <h1>Same Game</h1>
+        <p>Your Mobile Game Development Studio</p>
+    </header>
+    <div class="content">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to Same Game, where we bring your mobile game ideas to life. Our team of expert developers and designers are dedicated to creating engaging and immersive mobile gaming experiences. Whether you're looking for game design, development, or marketing, we've got you covered.</p>
+        </section>
+        <section id="game" class="section">
+            <h2>Our Game: Base Stickman Attack</h2>
+            <img src="/data/farm.jpg" alt="My Little Farm>" class="game-image">
+            <p>Check out our latest game: <a href="https://play.google.com/store/apps/details?id=com.onemoreplay.my.little.farm">Base Stickman Attack</a>. Use your army to defeat the enemy forces and destroy the opponents base. Draw the line to spawn units.</p>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="/data/scr1.png" alt="Game Scene 1">
+                    <img src="/data/scr2.png" alt="Game Scene 2">
+                    <img src="/data/scr3.png" alt="Game Scene 3">
+                    <img src="/data/scr4.png" alt="Game Scene 4">
+                    <img src="/data/scr5.png" alt="Game Scene 5">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to start a project with us, feel free to reach out.</p>
+            <p>Email: contact@samegame.org</p>
+<!--            <p>Phone: +123 456 7890</p>-->
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Same Game. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
